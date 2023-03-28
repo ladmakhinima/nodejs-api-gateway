@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  USER_MONGO_DB:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    container_name: USER_MONGO_DB
+    restart: on-failure
